@@ -1,0 +1,51 @@
+# Q1 load math modules
+import math
+
+
+# Q2 what is cosine of 45
+print (math.cos(45))
+
+
+# Q3 calc 5 to the power 3 in 2 different ways
+print(5**3)
+print(math.pow(5,3))
+
+
+# extract "data" from "temp = i am learning data analysis"
+# temp = "i am learning data analysis"
+# wordToRomove = slice(14,19) 
+# removeWord = temp[wordToRomove]
+# print(temp[wordToRomove])
+# print(temp.replace(wordToRomove, ""))
+
+
+#Q4 extract "data" from "temp = i am learning data analysis"
+temp = 'i am learning data analysis'
+word = temp[13: -8]
+print(word)
+
+
+# Q5 and Q6:  remove "hello" and "58" from my-list, my-list= [1,2,3[4,5,['Hello', false],28,24],58]
+My_list= [1,2,3,[4,5,['Hello', False],28,24],58]
+removeHello = My_list[3][2][0]
+print(removeHello)
+My_list.pop()
+print(My_list)
+
+
+# Q7 difference between list and tuples
+# list is "mutable" while tuples is  "immutable".
+
+
+# Q8 create a function name "TempConverter", which accept temperature in celsius and return fahrenheit.
+def TempConverter():
+    Celsius = int(input('enter the temperature in celsius: '))
+    MultyValue = Celsius * (1.8)
+    AddValue =  MultyValue + 32
+    print(AddValue)
+TempConverter()
+
+# Q9 write a function that takes in two variables(day and month), and calculate the number of days to your birthday starting from january
+def calNumOFdays():
+    day = int(input('enter the day you were born: '))
+    month = int(input('enter the month you were born: '))
